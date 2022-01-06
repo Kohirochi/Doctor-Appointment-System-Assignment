@@ -65,5 +65,12 @@ $doctor = to_string(mysqli_num_rows($doctor_result));
     </article>
 </main>
 <?php
+if (isset($_SESSION['login']) && $_SESSION['login'] == true) {
+    echo "<script>window.onload = function() {alert('" . $_SESSION['message'] . "')};</script>";
+    unset($_SESSION['login']);
+    unset($_SESSION['message']);
+}
 include_once "includes/footer.php";
+
+
 ?>

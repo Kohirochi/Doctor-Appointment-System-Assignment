@@ -130,8 +130,10 @@ if ($action == "delete") {
             <option value="" selected disabled hidden>Click to select patient</option>
             <?php if ($patient_check > 0) : ?>
             <?php while ($patient_row = mysqli_fetch_assoc($patient_result)) : ?>
+            <?php if (!empty($patient_row['Full_name'])) : ?>
             <option value="<?php echo $patient_row['Patient_ID'] . ":" . $patient_row['Full_name']; ?>">
                 <?php echo $patient_row['Full_name']; ?></option>
+            <?php endif; ?>
             <?php endwhile; ?>
             <?php endif; ?>
         </select>

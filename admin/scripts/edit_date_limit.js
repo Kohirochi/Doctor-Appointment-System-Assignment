@@ -15,6 +15,7 @@ $(document).ready(function() {
         day = "0" + day.toString();
     }
     
+
     //Disable previous date
     var minDate = year + "-" + month + "-" + day;
     $("#appointment-date").attr("min", minDate);
@@ -23,10 +24,11 @@ $(document).ready(function() {
     var date = new Date(calendar.value).toLocaleDateString();
     var day = new Date(calendar.value).getUTCDay();
     $("#appointment-time").load("admin_time_slot.php", {
-                date: date,
-                day: day
-            });
-    
+        date: date,
+        day: day
+    });
+
+    // https://pretagteam.com/question/disable-weekends-on-html-5-input-type-date
     calendar.addEventListener("input", function(e) {
         var date = new Date(this.value).toLocaleDateString();
         var day = new Date(this.value).getUTCDay();

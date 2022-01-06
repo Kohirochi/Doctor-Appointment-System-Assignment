@@ -125,7 +125,7 @@ if ($action == "delete") {
 <!-- HTML Content for View Record -->
 <?php if ($action == "view") : ?>
 <script>
-$("#view-form input-disabled").removeAttr("placeholder");
+$("#view-form .input-disabled").removeAttr("placeholder");
 $("#view-form .input-disabled").removeAttr('id');
 $("#edit-form .input-disabled").removeAttr('id');
 $("#add-form .input-disabled").removeAttr('id');

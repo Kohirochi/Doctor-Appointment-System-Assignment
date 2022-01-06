@@ -14,6 +14,7 @@ $(document).ready(function() {
     var minDate = year + "-" + month + "-" + day;
     $("#appointment-date").attr("min", minDate);
 
+    // https://pretagteam.com/question/disable-weekends-on-html-5-input-type-date
     const calendar = document.getElementById("appointment-date");
     calendar.addEventListener("input", function(e) {
         var date = new Date(this.value).toLocaleDateString();

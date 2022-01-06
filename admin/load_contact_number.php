@@ -8,8 +8,11 @@ $row = mysqli_fetch_assoc($result);
 ?>
 
 Patient Contact Number <br>
-<input type="text" placeholder="e.g. 999-9999999" name="contact-number" id="contact-number"
+<input type="text" placeholder="e.g. 999-9999999" name="contact-number" id="contact-number" class="remove_id"
     value="<?php echo $row['Contact_number']; ?>">
+<i class="fas fa-check-circle"></i>
+<i class="fas fa-exclamation-circle"></i>
+<small>Error message</small>
 
 <?php
 mysqli_close($conn);

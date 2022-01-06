@@ -255,6 +255,7 @@ function validate_add_doctor() {
     if (validation.includes(false)) {
         return false;
     } else {
+        alert(validation)
         return true;
     }
 }
@@ -267,8 +268,12 @@ function validate_doctor_edit_image() {
     // Allowing file type
     var allowed_extensions = /(\.jpg|\.jpeg|\.png|\.gif)$/;
     if (!is_empty(image)) {
+
+        // https://www.geeksforgeeks.org/file-type-validation-while-uploading-it-using-javascript/
         if (!allowed_extensions.exec(image)) {
             return set_error_for(image_input, "Only .jpg, .jpeg, .png and .gif files are allowed");
+            
+        // https://stackoverflow.com/questions/3717793/javascript-file-upload-size-validation
         } else if (image_input.files[0].size / 1024 / 1024 > 2) {
             return set_error_for(image_input, "Image size should not exceed 2 MiB");
         }
@@ -358,7 +363,7 @@ function validate_add_appointment() {
     var patient_contact_number = validate_contact_number();
     var patient_name = validate_appointment_patient_name();
     var doctor_name = validate_appointment_doctor_name();
-    var validation = [doctor_name, patient_name, patient_contact_number, date, time, remarks];
+    const validation = [doctor_name, patient_name, patient_contact_number, date, time, remarks];
     if (validation.includes(false)) {
         return false;
     } else {

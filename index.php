@@ -60,11 +60,9 @@ include_once "includes/header.php";
 include_once "includes/footer.php";
 ?>
 <?php
-
 if (isset($_SESSION['login']) && $_SESSION['login'] == true) {
     echo "<script>window.onload = function() {alert('" . $_SESSION['message'] . "')};</script>";
     unset($_SESSION['login']);
     unset($_SESSION['message']);
 }
-
 ?>

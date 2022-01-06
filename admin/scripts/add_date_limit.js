@@ -14,6 +14,7 @@ $(document).ready(function() {
     if (day < 10) {
         day = "0" + day.toString();
     }
+
     
     //Disable previous date
     var minDate = year + "-" + month + "-" + day;
@@ -29,7 +30,7 @@ $(document).ready(function() {
         });
     });
 
-
+    // https://pretagteam.com/question/disable-weekends-on-html-5-input-type-date
     const calendar = document.getElementById("appointment-date");
     calendar.addEventListener("input", function(e) {
         const doctor = document.getElementById("doctor-name");
