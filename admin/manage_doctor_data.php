@@ -218,6 +218,9 @@ $("#add-form .input-disabled").removeAttr("value");
 </div>
 <?php endif; ?>
 
+<!-- Validate Email Exist Error Script -->
+<script defer src="scripts/admin_email_exist_error.js"></script>
+
 <!-- Close Database Connection -->
 <?php
 if ($action == "view" || $action == "edit" || $action == "delete") {

@@ -1,23 +1,6 @@
 <?php
 session_start();
 include_once "includes/dbh.php";
-// if (isset($_POST['submit'])) {
-//     $to = "admin@medilife.com.my";
-//     $from = $_POST['email-address'];
-//     $full_name = $_POST['full-name'];
-//     $contact_number = $_POST['contact-number'];
-//     $inquiry = $_POST['inquiry'];
-//     $subject = "Form Submission";
-//     $message = "$full_name with the number $contact_number sent this message: $inquiry";
-//     $header = "From: $from";
-
-//     if (mail($to, $subject, $message, $header)) {
-//         $_SESSION['message'] = "Email successfully sent to $to";
-//     } else {
-//         $_SESSION['message'] = "Failed to send email";
-//     }
-//     header("Location: contact_us.php");
-// }
 
 if (isset($_POST['submit'])) {
     $full_name = $_POST['full-name'];

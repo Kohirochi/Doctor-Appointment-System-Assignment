@@ -861,6 +861,11 @@ hr.solid {
   visibility: visible;
 }
 
+.flex-item.email-exist-validation small {
+  color: red;
+  visibility: visible;
+}
+
 .submit-container {
   text-align: center;
 }

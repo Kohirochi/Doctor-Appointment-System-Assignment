@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    // https://stackoverflow.com/questions/43274559/how-do-i-restrict-past-dates-in-html5-input-type-date
+
     var tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate()+1);
     var month = tomorrow.getMonth() + 1;

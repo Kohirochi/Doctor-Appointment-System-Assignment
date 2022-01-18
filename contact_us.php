@@ -21,7 +21,7 @@ include_once "includes/header.php";
             </li>
             <li class="flex-item">
                 Contact Number: <br>
-                <input type="tel" name="contact-number" id="contact-number">
+                <input type="tel" name="contact-number" id="contact-number" placeholder="e.g. 999-9999999">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>

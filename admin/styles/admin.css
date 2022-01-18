@@ -437,6 +437,11 @@ table img {
   visibility: visible;
 }
 
+.flex-item.email-exist-validation small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
 /* The Close Button */
 .close {
   color: #aaa;

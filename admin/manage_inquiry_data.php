@@ -8,7 +8,8 @@ include_once "../includes/dbh.php";
 include_once "../doctor_schedule.php";
 session_start();
 ?>
-<!-- SQL Query for View, Edit Record -->
+
+<!-- SQL Query for View Record -->
 <?php
 if ($action == "view") {
     $sql_query = "SELECT * FROM inquiry WHERE Inquiry_ID = $id;";

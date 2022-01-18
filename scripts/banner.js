@@ -1,3 +1,5 @@
+// https://support.litmos.com/hc/en-us/articles/115001428953-Sample-HTML-Banner-code
+
 function plusDivs(n) {
     showDivs((slideIndex += n));
 }

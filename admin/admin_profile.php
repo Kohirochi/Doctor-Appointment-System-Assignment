@@ -12,7 +12,7 @@ $row = mysqli_fetch_assoc($result);
     <br>
     <hr>
     <article id="profile">
-        <div class="content-container">
+        <div class="content-container" id="profile-details">
             <div class="title-container">
                 <h2>Profile Settings</h2>
                 <button data-modal-target="#add" title="Edit" id="edit-button">
@@ -143,6 +143,10 @@ window.onload = function() {
     endif;
     ?>
 </script>
+
+<!-- Validate Email Exist Error Script -->
+<script defer src="scripts/admin_email_exist_error.js"></script>
+
 <?php
 include_once "includes/footer.php";
 ?>

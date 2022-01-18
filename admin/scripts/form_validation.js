@@ -255,7 +255,6 @@ function validate_add_doctor() {
     if (validation.includes(false)) {
         return false;
     } else {
-        alert(validation)
         return true;
     }
 }

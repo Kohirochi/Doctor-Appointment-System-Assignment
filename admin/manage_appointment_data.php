@@ -14,6 +14,7 @@ if ($action == "view" || $action == "edit" || $action == "delete") {
     $_SESSION['appointment_id'] = $id;
 }
 ?>
+
 <?php
 // SQL Query for View, Edit Record
 if ($action == "view" || $action == "edit") {

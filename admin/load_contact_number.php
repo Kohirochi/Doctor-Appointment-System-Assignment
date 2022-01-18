@@ -12,7 +12,7 @@ Patient Contact Number <br>
     value="<?php echo $row['Contact_number']; ?>">
 <i class="fas fa-check-circle"></i>
 <i class="fas fa-exclamation-circle"></i>
-<small>Error message</small>
+<small></small>
 
 <?php
 mysqli_close($conn);

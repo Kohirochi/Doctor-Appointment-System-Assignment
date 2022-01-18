@@ -19,8 +19,6 @@ if (isset($_SESSION['patient_email'])) {
         $patient_row = mysqli_fetch_assoc($patient_details);
     }
 }
-
-
 ?>
 
 <main id="specific-doctor-content">
@@ -32,8 +30,8 @@ if (isset($_SESSION['patient_email'])) {
             <h1><?php echo $doctor_row['Full_name']; ?></h1>
             <h2><?php echo $doctor_row['Gender']; ?></h2>
             <ul>
-                <li><i class="fas fa-phone-alt"></i>&nbsp; <?php echo $doctor_row['Email_address']; ?></li>
-                <li><i class="fas fa-envelope"></i>&nbsp; <?php echo $doctor_row['Contact_number']; ?></li>
+                <li><i class="fas fa-envelope"></i>&nbsp; <?php echo $doctor_row['Email_address']; ?></li>
+                <li><i class="fas fa-phone-alt"></i>&nbsp; <?php echo $doctor_row['Contact_number']; ?></li>
             </ul>
 
             <table border="1">
