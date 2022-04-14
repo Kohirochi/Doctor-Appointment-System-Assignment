@@ -81,7 +81,7 @@ if (isset($_POST['update']) || (isset($_POST['add']))) {
         if ($result_check > 0) {
             $_SESSION['message'] = "Email already exists. Please enter another one.";
             $_SESSION['add'] = false;
-            header("Location: admin_patients.php");
+            header("Location: admin_doctors.php");
         } else {
             $image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
             $sql_query = "INSERT INTO doctor (Email_address, Password, Full_name, Gender, Contact_number, Address_line_1, Address_line_2, Zip_code, City, State, Country, Qualification, Specialty, Languages, Image, Admin_ID) VALUES ('$email_address', '$password', '$full_name', '$gender', '$contact_number', '$address_line_1', '$address_line_2', '$zip_code', '$city', '$state', '$country', '$qualification', '$specialty', '$languages', '$image', 1);";
